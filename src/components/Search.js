@@ -11,13 +11,12 @@ class Search extends Component {
   handleFormSubmit(e) {
     // It is good practice to still prevent default behavior
     e.preventDefault();
-    console.log("Searched!");
+    console.log(this.state.value);
   }
   handleFormInput(e) {
     // It is good practice to still prevent default behavior
     // e.preventDefault();
     this.setState({ value: e.target.value });
-    console.log("Inputted!");
   }
 
   render() {
