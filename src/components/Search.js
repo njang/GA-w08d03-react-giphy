@@ -9,9 +9,9 @@ class Search extends Component {
   render() {
     return (
       <div className="Search">
-      	<form onSubmit={ this.props.handleFormSubmit } >
-      		<input type="text" onChange={ this.props.handleFormInput } />
-      		<button type="submit" >Search</button>
+      	<form className="form-group row" onSubmit={ this.props.handleFormSubmit } >
+      		<input className="form-control col col-5 offset-3" type="text" onChange={ this.props.handleFormInput } />
+      		<button className="btn btn-primary col col-1" type="submit">Search</button>
       	</form>
       </div>
     );
